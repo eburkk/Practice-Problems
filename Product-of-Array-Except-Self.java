@@ -58,6 +58,7 @@ class Solution {
 }
 
 // No division with O(n) runtime 
+// Taking the product of numbers to the left and right of every index i in input array
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int size = nums.length;         // length of input array
