@@ -3,6 +3,7 @@
 
 //Questions: 
 //  Can we assume n <= list length? --> yes, n will always be valid
+//  Is this a singly or doubly linked list? --> singly linked
 
 // Edge cases:
 //  head == null
