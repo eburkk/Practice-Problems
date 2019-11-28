@@ -34,24 +34,22 @@ class Solution {
 
 class Solution {
     public int removeDuplicates(int[] nums) {
-        if (nums != null) {
-            int size = nums.length;
-            if (size > 1) {
-                int current = nums[0];
-                int unseenNum;
-                int setIndex = 1;
-                for (int i = 1; i < nums.length; i++) {
-                    if (current != nums[i]) {
-                        unseenNum = nums[i];
-                        nums[setIndex] = unseenNum;
-                        current = unseenNum;
-                        setIndex++;
-                    }
+        int size = nums.length;
+        if (size > 1) {
+            int current = nums[0];
+            int unseenNum;
+            int setIndex = 1;
+            for (int i = 1; i < nums.length; i++) {
+                if (current != nums[i]) {
+                    unseenNum = nums[i];
+                    nums[setIndex] = unseenNum;
+                    current = unseenNum;
+                    setIndex++;
                 }
-                return setIndex;
             }
-            return 1;
+            return setIndex;
         }
-        return 0;
+        return 1;
     }
+    return 0;
 }
