@@ -18,6 +18,22 @@
 
 class Solution {
     public int removeDuplicates(int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+        int setIndex = 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[setIndex - 1] != nums[i]) {
+                nums[setIndex] = nums[i];
+                setIndex++;
+            }
+        }
+        return setIndex;
+    }
+}
+
+class Solution {
+    public int removeDuplicates(int[] nums) {
         if (nums != null) {
             int size = nums.length;
             if (size > 1) {
