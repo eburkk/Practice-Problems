@@ -9,8 +9,6 @@
 //  - What should I do with the duplicate numbers? --> put them at the end
 //  - Does it need to be stable, maintain its order? --> no
 
-
-
 // Edge Cases: 
 //  - empty array
 //  - everything in the array is a duplicate --> return length 1
