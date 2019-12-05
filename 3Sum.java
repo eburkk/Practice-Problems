@@ -10,7 +10,6 @@
 // Edge Cases: 
 //  - having duplicate numbers in array (HashSet only allows unique values)
 
-// O(n^2) runtime solution
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> output = new ArrayList<List<Integer>>();
